@@ -40,14 +40,14 @@ public class ShowUserProfile extends HttpServlet {
 		
 		Profile profile = map.get(name);
 		out.println("<html><body>");
-		out.println("User Name"+profile.getName());
-		out.println("<br>Age:"+profile.getAge());
-		out.println("<br>State:"+profile.getState());
-		out.println("<br>Pin code:"+profile.getPincode());
-		out.println("<br>Mobile:"+profile.getMobile());
-		out.println("<br>City:"+profile.getCity());
+		out.println("<font size='4'>User Name"+profile.getName()+"</font>");
+		out.println("<br><font size='4'>Age:"+profile.getAge()+"</font>");
+		out.println("<br><font size='4'>State:"+profile.getState()+"</font>");
+		out.println("<br><font size='4'>Pin code:"+profile.getPincode()+"</font>");
+		out.println("<br><font size='4'>Mobile:"+profile.getMobile()+"</font>");
+		out.println("<br><font size='4'>City:"+profile.getCity()+"</font>");
 		out.println("<br><form action='Logout' method='post'>");
-        out.println("<input type='submit' name='submit' value='Logout'>");
+        out.println("<br><br><input type='submit' name='submit' value='Logout'>");
         out.println("</form></body></html>");
 	}
 
